@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Desafio JavaScript</title>
+</head>
+
+<body>
+    <div class="container-grid">
+        <header class="header">
+            <div class="header-image">
+                <h1>Requerimiento N°1 "Borde Imagen"</h1>
+                <img src="./asset/image/homero.webp" alt="homero-simpson-durmiendo" class="size-image1"
+                    onclick="fnimageborder()">
+                    <h2>Pinchar imagen</h2>
+
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-card">
+                <h1>Requerimiento N°2 "Stickers"</h1>
+                <h2>Puedes llevar hasta 10 stickers en Total </h2>
+                <div class="main-image">
+                    <div class="card-image">
+                        <img src="./asset/image/bart.jpg" alt="bart-simpson-durmiendo" class="size-image2" id="image1">
+                        <input class="card-inp" id="number1" type="text" value="0" onblur="return fnvalidarango1(this)" maxlength="2" />
+                        <p class="warning-num1"></p>    
+                    </div>
+                    <div class="card-image">
+                        <img src="./asset/image/homero.png" alt="homero-simpson-salivando" class="size-image2" id="image1">
+                        <input class="card-inp" id="number2" type="text" value="0" onblur="return fnvalidarango2(this)" maxlength="2" />
+                        <p class="warning-num2"></p>
+                    </div>
+                    <div class="card-image">
+                        <img src="./asset/image/lisa.jpeg" alt="lisa-simpson-loser" class="size-image2" id="image1">
+                        <input class="card-inp" id="number3" type="text" value="0" onblur="return fnvalidarango3(this)" maxlength="2" />
+                        <p class="warning-num3"></p>
+                    </div>
+                </div>
+                <p class="text1"></p>
+                <button class="btn" onclick="fnstickers()">Validar</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-select">
+                <div>
+                    <h1>Requerimiento N°3 "Password"</h1>
+                    <h2>Ingresa el Password</h2>
+                </div>
+                <div>
+                    <select id="pass1" class="sel" name="select1">
+                        <option value="0" >0</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select id="pass2" class="sel" name="select2">
+                        <option value="0" >0</option>
+                        <option value="1" selected >1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select id="pass3" class="sel" name="select3">
+                        <option value="0" >0</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn-sel" onclick="fnpassword()">Ingresar</button>
+                    <p class="txtpass"></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./asset/js/index.js"></script>
+</body>
+
+</html>
