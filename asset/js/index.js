@@ -23,12 +23,10 @@ function fnstickers(){
         mytextwar.classList.remove('txt-warning2')
         mytextwar.classList.add('txt-warning1')
         mytextwar.innerHTML = 'Llevas '+sum+' stickers'
-        console.log('Llevas '+sum+' stickers')
     }else{
         mytextwar.classList.remove('txt-warning1')
         mytextwar.classList.add('txt-warning2')
         mytextwar.innerHTML = '* Llevas demasiados stickers'
-        console.log('Llevas demasiados stickers')
     }
  }
 
@@ -38,7 +36,6 @@ function fnvalidarango1(event){
     let val = parseInt(event.value)
     if(isNaN(val)){
         mywarnum1.innerHTML = '* El valor debe ser numérico'
-        console.log('el valor debe ser numérico')
         btn.style.opacity = '0.5'
         btn.disabled = true
         return false
@@ -46,13 +43,11 @@ function fnvalidarango1(event){
     
     if(val >= 0 && val <= 10){
         mywarnum1.innerHTML = ''
-        console.log('el valor en rango')
         btn.style.opacity = '1'
         btn.disabled = false
         return true
     }else{
         mywarnum1.innerHTML = '* El valor fuera de rango'
-        console.log('el valor fuera de rango')
         btn.style.opacity = '0.5'
         btn.disabled = true
         return false
@@ -64,7 +59,6 @@ function fnvalidarango2(event){
     let val = parseInt(event.value)
     if(isNaN(val)){
         mywarnum2.innerHTML = '* El valor debe ser numérico'
-        console.log('el valor debe ser numérico')
         btn.style.opacity = '0.5'
         btn.disabled = true
         return false
@@ -72,13 +66,11 @@ function fnvalidarango2(event){
     
     if(val >= 0 && val <= 10){
         mywarnum2.innerHTML = ''
-        console.log('el valor en rango')
         btn.style.opacity = '1'
         btn.disabled = false
         return true
     }else{
         mywarnum2.innerHTML = '* El valor fuera de rango'
-        console.log('el valor fuera de rango')
         btn.style.opacity = '0.5'
         btn.disabled = true
         return false
@@ -90,7 +82,6 @@ function fnvalidarango3(event){
     let val = parseInt(event.value)
     if(isNaN(val)){
         mywarnum3.innerHTML = '* El valor debe ser numérico'
-        console.log('el valor debe ser numérico')
         btn.style.opacity = '0.5'
         btn.disabled = true
         return false
@@ -98,13 +89,11 @@ function fnvalidarango3(event){
     
     if(val >= 0 && val <= 10){
         mywarnum3.innerHTML = ''
-        console.log('el valor en rango')
         btn.style.opacity = '1'
         btn.disabled = false
         return true
     }else{
         mywarnum3.innerHTML = '* El valor fuera de rango'
-        console.log('el valor fuera de rango')
         btn.style.opacity = '0.5'
         btn.disabled = true
         return false
